@@ -13,20 +13,32 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<Compile Remove="Extensions\JsonExtension.cs" />
 		<Compile Remove="ThirdParty\Sample.cs" />
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Magick.NET-Q16-AnyCPU" Version="7.10.2" />
-		<PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
-		<PackageReference Include="NLog" Version="4.5.11" />
+		<PackageReference Include="Magick.NET-Q16-AnyCPU" Version="13.5.0" />
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+		<PackageReference Include="NLog" Version="5.2.8" />
 	</ItemGroup>
 
-	<!--<ItemGroup>
-    <Reference Include="Microsoft.Extensions.Options">
-      <HintPath>C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.extensions.options\2.1.1\lib\netstandard2.0\Microsoft.Extensions.Options.dll</HintPath>
-    </Reference>
-  </ItemGroup>-->
+	<PropertyGroup>
+		<!--https://learn.microsoft.com/zh-cn/nuget/quickstart/create-and-publish-a-package-using-the-dotnet-cli-->
+		<PackageId>OxetekWeChatSDK</PackageId>
+		<Version>6.0.0</Version>
+		<Authors>Oxetek</Authors>
+		<Company>Oxetek</Company>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageLicenseFile>LICENSE</PackageLicenseFile>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<RepositoryType>git</RepositoryType>
+		<RepositoryUrl>https://github.com/samxxxxx/OxtekWeChatSDK.git</RepositoryUrl>
+		<Description>微信开发包，小程序部分接口和公众号部分接口，目前功能不完善请谨慎使用</Description>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="docs\README.md" Pack="true" PackagePath="\" />
+		<None Include="LICENSE" Pack="true" PackagePath="\" />
+	</ItemGroup>
 
 </Project>

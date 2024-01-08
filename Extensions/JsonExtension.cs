@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Oxetek.com.WeiXinSDK
+namespace OxetekWeChatSDK.Extensions
 {
     public static class JsonExtension
     {
