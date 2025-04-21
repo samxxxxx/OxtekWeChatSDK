@@ -33,6 +33,7 @@
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<RepositoryType>git</RepositoryType>
 		<RepositoryUrl>https://github.com/samxxxxx/OxtekWeChatSDK.git</RepositoryUrl>
+		<ProjectUrl>https://github.com/samxxxxx/OxtekWeChatSDK.git</ProjectUrl>
 		<Description>微信开发包，小程序部分接口和公众号部分接口，目前功能不完善请谨慎使用</Description>
 	</PropertyGroup>
 
